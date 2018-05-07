@@ -1,6 +1,7 @@
 # -*- encoding: utf-8 -*-
 
-require_relative "culture/sync"
+$:.push File.expand_path("../culture", __FILE__)
+require "sync"
 
 Gem::Specification.new do |gem|
   gem.name        = "celluloid"
